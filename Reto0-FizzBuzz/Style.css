@@ -1,0 +1,48 @@
+body
+{
+   
+    background:radial-gradient(circle, rgb(3, 94, 97), rgb(7, 55, 45));
+
+}
+header
+{
+
+    font-weight: 500px;
+    font-size: 40px;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    text-align: center;
+    color: rgb(207, 202, 197);
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    
+}
+pre
+{
+    color:rgb(207, 202, 197);
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+div
+{
+    text-align: center;
+    background-color: rgb(165, 214, 167);
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+h2
+{
+    margin-top: 50px;
+    padding-top: 10px;
+}
+#resultado
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-align:left;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
