@@ -26,19 +26,37 @@ const el =
     "jump" : "|"
 };
 
-if(el["run"] == "_")
-    console.log(true);
+
 // El arreglo y el string debe tener la misma cantidad de elmentos.
 const checkRace = ( accion, pista) =>
 {
     let resultado = "";
+    let prueba = true;
 
     for (let i = 0; i < pista.length; i++)
     {
         if(el[accion[i]] == pista[i])
             resultado+= pista[i];
+        else
+        {
+            prueba = false;
+            switch (accion[i])
+            {
+                case "run":
+                    resultado+="x";
+                    break;
+                case "jump":
+                    resultado+="/";
+            
+                default:
+                    break;
+            }
+        } 
+
          
     }
+    console.log("El resultado de la carrera es: ", resultado);
+    return prueba;
  
 };
 
@@ -46,4 +64,8 @@ const checkRace = ( accion, pista) =>
 let accion = ["run","jump","run","run"];
 let pista = "_|__";
 
+if(checkRace(accion, pista))
+    console.log("LA carrera se completó con existo");
+else
+    console.log("No se completó bien la carrera");
     
